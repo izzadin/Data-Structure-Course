@@ -11,7 +11,7 @@ int i,j,key,temp;  // i to loop through the whole array, j to loop from key to t
 for(i=1;i<array.length;i++){     // loop through the whole array
 	key = array[i];                     // the individual value to be sorted
 	j=i-1;                                  // sorting the next left element from the key
-	while(j>0 && key<array[j]){   // moving to the nex element
+	while(j>=0 && key<array[j]){   // moving to the nex element
 		temp=array[j];                   // do sawp
 		array[j]=array[j+1];
 		array[j+1]=temp;
